@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Emoji Social Attention (Web)</title>
+
+  <!-- jsPsych 7 -->
+  <link href="https://unpkg.com/jspsych@7.3.4/css/jspsych.css" rel="stylesheet" />
+  <script src="https://unpkg.com/jspsych@7.3.4"></script>
+
+  <!-- Plugins -->
+  <script src="https://unpkg.com/@jspsych/plugin-preload@1.2.1"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-fullscreen@1.2.1"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.2.1"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-image-keyboard-response@1.2.1"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-survey-html-form@1.2.1"></script>
+
+  <style>
+    /* 背景灰：对应 PsychoPy (128,128,128) */
+    body { background: rgb(128,128,128); }
+    /* 隐藏鼠标（你要求隐藏） */
+    body.hide-cursor, body.hide-cursor * { cursor: none !important; }
+
+    /* 中央内容更像实验呈现 */
+    .center-wrap {
+      width: 100vw; height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column;
+      color: #000;
+      font-family: "Microsoft YaHei UI", "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+      user-select: none;
+    }
+    .fix { font-size: 90px; line-height: 1; margin: 0; }
+    .row { display: flex; gap: 260px; align-items: center; justify-content: center; }
+    .imgbox { width: 194px; height: 194px; display:flex; align-items:center; justify-content:center; }
+    .imgbox img { width: 194px; height: 194px; object-fit: contain; }
+    .bigtext { font-size: 50px; white-space: pre-line; }
+  </style>
+</head>
+<body>
+  <script src="./experiment.js"></script>
+</body>
+</html>
